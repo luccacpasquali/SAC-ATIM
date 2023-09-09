@@ -182,6 +182,7 @@ int main (){
 			printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
 			printf("\nEsperamos que voce tenha um otimo dia!");
 			return 1;
+			system("pause");
 			
 		} else { // se valor invalido
 			
@@ -203,7 +204,7 @@ int main (){
 		return 1;
 	}
   
-  system("pause");
+  
   
   // for ( int contador = 1, contador == var.length, contador ++){}
   
