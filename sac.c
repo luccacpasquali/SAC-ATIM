@@ -27,7 +27,7 @@ int main (){
     	scanf("%d",&respUsu);
     	
     	//primeira condicao visita
-    	if (respUsu == 1){  //se danos fisicos
+    	if (respUsu == 1){                                                                           //se danos fisicos
     		
 			printf("\nHmmm... aparentemente seu aparelho sofreu danos fisicos :o");
 			printf("\nConte um pouco mais para entendermos melhor...");
@@ -73,30 +73,37 @@ int main (){
 		    					printf("\nDigite [1] para continuar\n");
 		    					printf("\nDigite [2] para encerrar\n");
 		    					scanf("%d",&respUsu); 
-		    					
-		    					if(respUsu == 1){ // verificacao nuemro
-		    					printf("\nMuito bem agora digite o nuemro da sua residencia:  ");	
-		    					scanf("%d",&valorIrrelevante);
-		    					printf("\nDigite [1] para continuar\n");
-		    					printf("\nDigite [2] para encerrar\n");
-		    					scanf("%d",&respUsu);  
-		    					
-		    					} else if (respUsu == 4){ // se encerrar 
-							
-									printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
-									printf("\nEsperamos que voce tenha um otimo dia!");
-									return 1;
-						
-								} else { // se valor invalido
-										
-										printf("Ops... Parece que voce digitou um valor invalido :(");
-										printf("Sendo assim, o esse atendimento esta sendo encerrado !");
+			    					
+			    					if(respUsu == 1){ // verificacao nuemero
+			    						printf("\nMuito bem agora digite o nuemro da sua residencia:  ");	
+			    						scanf("%d",&valorIrrelevante);
+			    						printf("\nDigite [1] para continuar\n");
+			    						printf("\nDigite [2] para encerrar\n");
+			    						scanf("%d",&respUsu);  
+				    					
+				    					if(respUsu == 1){ // servico indisponivel // fim danos fisicos
+				    						printf("\nInfelizmente o servico de assistencia tecnica nao esta disponivel para sua regiao nesse momento :(  ");	
+				    						printf("\nSendo assim, o esse atendimento esta sendo encerrado !");
+											printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
+											printf("\nEsperamos que voce tenha um otimo dia!");
+											return 1;
+			    					
+			    					} else if (respUsu == 2){ // se encerrar 
+								
 										printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
 										printf("\nEsperamos que voce tenha um otimo dia!");
 										return 1;
-								}	
+							
+									} else { // se valor invalido
+											
+											printf("Ops... Parece que voce digitou um valor invalido :(");
+											printf("\nSendo assim, o esse atendimento esta sendo encerrado !");
+											printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
+											printf("\nEsperamos que voce tenha um otimo dia!");
+											return 1;
+									}	
 		    					
-							} else if (respUsu == 4){ // se encerrar 
+							} else if (respUsu == 2){ // se encerrar 
 					
 							printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
 							printf("\nEsperamos que voce tenha um otimo dia!");
@@ -112,7 +119,7 @@ int main (){
 							}	
 							
 	    					
-						} else if (respUsu == 4){ // se encerrar 
+						} else if (respUsu == 2){ // se encerrar 
 					
 							printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
 							printf("\nEsperamos que voce tenha um otimo dia!");
@@ -128,7 +135,7 @@ int main (){
 						}	
 	    				
     					
-					} else if (respUsu == 4){ // se encerrar 
+					} else if (respUsu == 2){ // se encerrar 
 					
 					printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
 					printf("\nEsperamos que voce tenha um otimo dia!");
@@ -143,7 +150,7 @@ int main (){
 						return 1;
 					}	
     				
-				} else if (respUsu == 4){ // se encerrar 
+				} else if (respUsu == 2){ // se encerrar 
 					
 					printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
 					printf("\nEsperamos que voce tenha um otimo dia!");
@@ -158,7 +165,7 @@ int main (){
 					return 1;
 				}			
 				  			
-			} else if (respUsu == 4) { // se quiser encerrar
+			} else if (respUsu == 2) { // se quiser encerrar
 				printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
 				printf("\nEsperamos que voce tenha um otimo dia!");
 				
@@ -169,7 +176,7 @@ int main (){
 				printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
 				printf("\nEsperamos que voce tenha um otimo dia!");
 				return 1;
-			}
+			 ;}                                                                              // fim solicitacao de visita tecnica
     		
     			
 		
