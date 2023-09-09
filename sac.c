@@ -61,11 +61,56 @@ int main (){
 	    				scanf("%d",&respUsu);
 	    				
 	    				if(respUsu == 1){ // verificaçao do cidade
-	    					printf("\nMuito bem agora digite o nome da sua cidade:  ");
+	    					printf("\nMuito bem agora digite o nome da sua cidade:  ");	
 		    				scanf("%d",&valorIrrelevante);
 		    				printf("\nDigite [1] para continuar\n");
 		    				printf("\nDigite [2] para encerrar\n");
-		    				scanf("%d",&respUsu);
+		    				scanf("%d",&respUsu); 
+		    				
+		    				if(respUsu == 1){ // verificacao nome rua
+		    					printf("\nMuito bem agora digite o nome da sua rua:  ");	
+		    					scanf("%d",&valorIrrelevante);
+		    					printf("\nDigite [1] para continuar\n");
+		    					printf("\nDigite [2] para encerrar\n");
+		    					scanf("%d",&respUsu); 
+		    					
+		    					if(respUsu == 1){ // verificacao nuemro
+		    					printf("\nMuito bem agora digite o nuemro da sua residencia:  ");	
+		    					scanf("%d",&valorIrrelevante);
+		    					printf("\nDigite [1] para continuar\n");
+		    					printf("\nDigite [2] para encerrar\n");
+		    					scanf("%d",&respUsu);  
+		    					
+		    					} else if (respUsu == 4){ // se encerrar 
+							
+									printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
+									printf("\nEsperamos que voce tenha um otimo dia!");
+									return 1;
+						
+								} else { // se valor invalido
+										
+										printf("Ops... Parece que voce digitou um valor invalido :(");
+										printf("Sendo assim, o esse atendimento esta sendo encerrado !");
+										printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
+										printf("\nEsperamos que voce tenha um otimo dia!");
+										return 1;
+								}	
+		    					
+							} else if (respUsu == 4){ // se encerrar 
+					
+							printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
+							printf("\nEsperamos que voce tenha um otimo dia!");
+							return 1;
+				
+							} else { // se valor invalido
+								
+								printf("Ops... Parece que voce digitou um valor invalido :(");
+								printf("Sendo assim, o esse atendimento esta sendo encerrado !");
+								printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
+								printf("\nEsperamos que voce tenha um otimo dia!");
+								return 1;
+							}	
+							
 	    					
 						} else if (respUsu == 4){ // se encerrar 
 					
@@ -126,8 +171,7 @@ int main (){
 				return 1;
 			}
     		
-    		
-			
+    			
 		
 		} else if (respUsu == 2){ // se lendidao
 		
@@ -158,5 +202,10 @@ int main (){
 		printf("\nEsperamos que voce tenha um otimo dia!");
 		return 1;
 	}
-   
+  
+  system("pause");
+  
+  // for ( int contador = 1, contador == var.length, contador ++){}
+  
+	return 0;
 }
