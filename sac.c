@@ -81,7 +81,7 @@ int main (){
 			    						printf("\nDigite [2] para encerrar\n");
 			    						scanf("%d",&respUsu);  
 				    					
-				    					if(respUsu == 1){ // servico indisponivel // fim danos fisicos
+				    					if(respUsu == 1){ // servico indisponivel // fim
 				    						printf("\nInfelizmente o servico de assistencia tecnica nao esta disponivel para sua regiao nesse momento :(  ");	
 				    						printf("\nSendo assim, o esse atendimento esta sendo encerrado !");
 											printf("\nMuito obrigado por ultilizar o SAC da ATIM :)");
@@ -216,4 +216,8 @@ int main (){
   // for ( int contador = 1, contador == var.length, contador ++){}
   
 	return 0;
+} 
+
+
+
 }
